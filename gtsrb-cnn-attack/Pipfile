@@ -1,0 +1,16 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[dev-packages]
+
+
+
+[packages]
+
+tensorflow = "==1.4.1"
+keras = "==1.2.2"
+opencv-python = "*"

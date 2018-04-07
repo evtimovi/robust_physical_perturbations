@@ -110,3 +110,5 @@ output_noisegen
 .DS_Store
 #More Mac Bullshit
 ._*
+
+gtsrb-cnn-attack/models/*
