@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+opencv-python = "*"
+Pillow = "*"
+Keras = "==1.2.2"
+tensorflow-gpu = "==1.4.1"

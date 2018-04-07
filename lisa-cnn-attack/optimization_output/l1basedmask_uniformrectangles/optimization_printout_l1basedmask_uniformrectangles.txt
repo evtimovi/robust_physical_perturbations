@@ -1,0 +1,880 @@
+going into setup
+Parameters
+adam_beta1 0.9
+adam_beta2 0.999
+adam_epsilon 1e-08
+attack_epochs 1000
+attack_lambda 0.02
+attack_mask ./masks/mask_l1loss_uniform_rectangles.png
+attack_srcdir ../real/stops/resized/
+attack_srcimg ./source_images/307_resized.png
+checkpoint l1basedmask_uniformrectangles
+clipping True
+fullres_input False
+img_cols 32
+img_rows 32
+initial_value_for_noise 
+inverse_mask False
+inverse_mask_setpoint 0.37
+model_path ./models/all_r_ivan.ckpt
+nb_channels 3
+nb_classes 18
+noise_clip_max 20.0
+noise_clip_min -20.0
+noisy_input_clip_max 1.0
+noisy_input_clip_min 0.0
+optimization_loss 
+optimization_rate 0.1
+printability_optimization False
+printability_tuples ./red_triplets/red30triplets_sampled_from_images_scaled.csv
+regloss 
+save_frequency 50
+target_class 12
+tf_seed 3272775
+Created TensorFlow session and set Keras backend.
+Loaded the parameters for the model from ./models/all_r_ivan.ckpt
+Loaded images in directory ../real/stops/resized/
+Index 0 image 16.png
+Index 1 image 40.png
+Index 2 image 26.png
+Index 3 image 38.png
+Index 4 image 25.png
+Index 5 image 17.png
+Index 6 image 30.png
+Index 7 image 41.png
+Index 8 image 3.png
+Index 9 image 27.png
+Index 10 image 12.png
+Index 11 image 29.png
+Index 12 image 4.png
+Index 13 image 11.png
+Index 14 image 20.png
+Index 15 image 18.png
+Index 16 image 31.png
+Index 17 image 35.png
+Index 18 image 21.png
+Index 19 image 15.png
+Index 20 image 28.png
+Index 21 image 13.png
+Index 22 image 39.png
+Index 23 image 32.png
+Index 24 image 5.png
+Index 25 image 9.png
+Index 26 image 23.png
+Index 27 image 37.png
+Index 28 image 22.png
+Index 29 image 7.png
+Index 30 image 6.png
+Index 31 image 10.png
+Index 32 image 33.png
+Index 33 image 19.png
+Index 34 image 36.png
+Index 35 image 24.png
+Index 36 image 1.png
+Index 37 image 8.png
+Index 38 image 34.png
+Index 39 image 2.png
+
+Epoch 0 adversarial loss 6.23343 model loss on clean img: 5.70886 percent misclassified images 27.5
+
+Epoch 1 adversarial loss 5.71536 model loss on clean img: 5.70886 percent misclassified images 27.5
+
+Epoch 2 adversarial loss 5.14753 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 3 adversarial loss 4.56219 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 4 adversarial loss 3.97737 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 5 adversarial loss 3.41176 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 6 adversarial loss 2.88169 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 7 adversarial loss 2.40960 model loss on clean img: 5.70886 percent misclassified images 25.0
+
+Epoch 8 adversarial loss 2.00766 model loss on clean img: 5.70886 percent misclassified images 32.5
+
+Epoch 9 adversarial loss 1.67037 model loss on clean img: 5.70886 percent misclassified images 47.5
+
+Epoch 10 adversarial loss 1.39737 model loss on clean img: 5.70886 percent misclassified images 52.5
+
+Epoch 11 adversarial loss 1.20048 model loss on clean img: 5.70886 percent misclassified images 57.5
+
+Epoch 12 adversarial loss 1.06917 model loss on clean img: 5.70886 percent misclassified images 65.0
+
+Epoch 13 adversarial loss 0.98153 model loss on clean img: 5.70886 percent misclassified images 75.0
+
+Epoch 14 adversarial loss 0.92227 model loss on clean img: 5.70886 percent misclassified images 82.5
+
+Epoch 15 adversarial loss 0.88381 model loss on clean img: 5.70886 percent misclassified images 82.5
+
+Epoch 16 adversarial loss 0.86043 model loss on clean img: 5.70886 percent misclassified images 87.5
+
+Epoch 17 adversarial loss 0.84749 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 18 adversarial loss 0.84265 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 19 adversarial loss 0.84172 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 20 adversarial loss 0.84388 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 21 adversarial loss 0.84723 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 22 adversarial loss 0.85062 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 23 adversarial loss 0.85396 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 24 adversarial loss 0.85702 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 25 adversarial loss 0.85956 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 26 adversarial loss 0.86183 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 27 adversarial loss 0.86379 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 28 adversarial loss 0.86557 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 29 adversarial loss 0.86714 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 30 adversarial loss 0.86855 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 31 adversarial loss 0.86979 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 32 adversarial loss 0.87085 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 33 adversarial loss 0.87173 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 34 adversarial loss 0.87234 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 35 adversarial loss 0.87274 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 36 adversarial loss 0.87301 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 37 adversarial loss 0.87316 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 38 adversarial loss 0.87319 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 39 adversarial loss 0.87313 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 40 adversarial loss 0.87300 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 41 adversarial loss 0.87280 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 42 adversarial loss 0.87251 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 43 adversarial loss 0.87214 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 44 adversarial loss 0.87168 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 45 adversarial loss 0.87112 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 46 adversarial loss 0.87052 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 47 adversarial loss 0.86994 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 48 adversarial loss 0.86936 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 49 adversarial loss 0.86880 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 50 adversarial loss 0.86808 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 51 adversarial loss 0.86733 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 52 adversarial loss 0.86655 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 53 adversarial loss 0.86574 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 54 adversarial loss 0.86489 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 55 adversarial loss 0.86401 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 56 adversarial loss 0.86311 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 57 adversarial loss 0.86220 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 58 adversarial loss 0.86127 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 59 adversarial loss 0.86034 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 60 adversarial loss 0.85939 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 61 adversarial loss 0.85840 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 62 adversarial loss 0.85738 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 63 adversarial loss 0.85636 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 64 adversarial loss 0.85531 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 65 adversarial loss 0.85426 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 66 adversarial loss 0.85321 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 67 adversarial loss 0.85219 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 68 adversarial loss 0.85117 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 69 adversarial loss 0.85014 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 70 adversarial loss 0.84911 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 71 adversarial loss 0.84805 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 72 adversarial loss 0.84696 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 73 adversarial loss 0.84587 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 74 adversarial loss 0.84478 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 75 adversarial loss 0.84369 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 76 adversarial loss 0.84260 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 77 adversarial loss 0.84151 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 78 adversarial loss 0.84043 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 79 adversarial loss 0.83936 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 80 adversarial loss 0.83828 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 81 adversarial loss 0.83720 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 82 adversarial loss 0.83612 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 83 adversarial loss 0.83503 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 84 adversarial loss 0.83394 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 85 adversarial loss 0.83286 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 86 adversarial loss 0.83180 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 87 adversarial loss 0.83077 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 88 adversarial loss 0.82975 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 89 adversarial loss 0.82876 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 90 adversarial loss 0.82777 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 91 adversarial loss 0.82677 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 92 adversarial loss 0.82578 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 93 adversarial loss 0.82482 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 94 adversarial loss 0.82388 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 95 adversarial loss 0.82294 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 96 adversarial loss 0.82202 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 97 adversarial loss 0.82112 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 98 adversarial loss 0.82021 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 99 adversarial loss 0.81930 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 100 adversarial loss 0.81844 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 101 adversarial loss 0.81757 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 102 adversarial loss 0.81669 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 103 adversarial loss 0.81579 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 104 adversarial loss 0.81493 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 105 adversarial loss 0.81408 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 106 adversarial loss 0.81329 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 107 adversarial loss 0.81251 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 108 adversarial loss 0.81181 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 109 adversarial loss 0.81110 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 110 adversarial loss 0.81040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 111 adversarial loss 0.80968 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 112 adversarial loss 0.80896 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 113 adversarial loss 0.80823 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 114 adversarial loss 0.80749 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 115 adversarial loss 0.80677 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 116 adversarial loss 0.80607 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 117 adversarial loss 0.80538 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 118 adversarial loss 0.80469 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 119 adversarial loss 0.80404 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 120 adversarial loss 0.80342 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 121 adversarial loss 0.80283 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 122 adversarial loss 0.80222 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 123 adversarial loss 0.80164 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 124 adversarial loss 0.80108 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 125 adversarial loss 0.80053 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 126 adversarial loss 0.79993 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 127 adversarial loss 0.79938 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 128 adversarial loss 0.79884 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 129 adversarial loss 0.79834 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 130 adversarial loss 0.79787 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 131 adversarial loss 0.79744 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 132 adversarial loss 0.79707 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 133 adversarial loss 0.79671 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 134 adversarial loss 0.79641 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 135 adversarial loss 0.79616 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 136 adversarial loss 0.79594 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 137 adversarial loss 0.79576 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 138 adversarial loss 0.79558 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 139 adversarial loss 0.79540 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 140 adversarial loss 0.79517 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 141 adversarial loss 0.79493 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 142 adversarial loss 0.79470 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 143 adversarial loss 0.79448 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 144 adversarial loss 0.79427 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 145 adversarial loss 0.79406 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 146 adversarial loss 0.79390 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 147 adversarial loss 0.79376 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 148 adversarial loss 0.79363 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 149 adversarial loss 0.79355 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 150 adversarial loss 0.79344 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 151 adversarial loss 0.79334 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 152 adversarial loss 0.79324 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 153 adversarial loss 0.79315 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 154 adversarial loss 0.79308 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 155 adversarial loss 0.79298 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 156 adversarial loss 0.79287 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 157 adversarial loss 0.79274 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 158 adversarial loss 0.79261 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 159 adversarial loss 0.79250 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 160 adversarial loss 0.79241 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 161 adversarial loss 0.79234 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 162 adversarial loss 0.79230 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 163 adversarial loss 0.79229 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 164 adversarial loss 0.79226 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 165 adversarial loss 0.79222 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 166 adversarial loss 0.79216 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 167 adversarial loss 0.79211 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 168 adversarial loss 0.79206 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 169 adversarial loss 0.79202 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 170 adversarial loss 0.79197 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 171 adversarial loss 0.79191 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 172 adversarial loss 0.79185 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 173 adversarial loss 0.79179 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 174 adversarial loss 0.79176 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 175 adversarial loss 0.79171 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 176 adversarial loss 0.79166 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 177 adversarial loss 0.79161 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 178 adversarial loss 0.79159 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 179 adversarial loss 0.79154 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 180 adversarial loss 0.79151 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 181 adversarial loss 0.79148 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 182 adversarial loss 0.79147 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 183 adversarial loss 0.79143 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 184 adversarial loss 0.79142 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 185 adversarial loss 0.79140 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 186 adversarial loss 0.79137 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 187 adversarial loss 0.79134 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 188 adversarial loss 0.79131 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 189 adversarial loss 0.79128 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 190 adversarial loss 0.79126 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 191 adversarial loss 0.79123 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 192 adversarial loss 0.79120 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 193 adversarial loss 0.79119 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 194 adversarial loss 0.79117 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 195 adversarial loss 0.79116 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 196 adversarial loss 0.79114 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 197 adversarial loss 0.79113 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 198 adversarial loss 0.79110 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 199 adversarial loss 0.79109 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 200 adversarial loss 0.79106 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 201 adversarial loss 0.79103 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 202 adversarial loss 0.79104 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 203 adversarial loss 0.79100 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 204 adversarial loss 0.79099 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 205 adversarial loss 0.79098 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 206 adversarial loss 0.79096 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 207 adversarial loss 0.79094 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 208 adversarial loss 0.79092 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 209 adversarial loss 0.79091 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 210 adversarial loss 0.79090 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 211 adversarial loss 0.79088 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 212 adversarial loss 0.79085 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 213 adversarial loss 0.79083 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 214 adversarial loss 0.79082 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 215 adversarial loss 0.79080 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 216 adversarial loss 0.79078 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 217 adversarial loss 0.79077 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 218 adversarial loss 0.79076 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 219 adversarial loss 0.79073 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 220 adversarial loss 0.79071 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 221 adversarial loss 0.79069 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 222 adversarial loss 0.79067 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 223 adversarial loss 0.79066 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 224 adversarial loss 0.79064 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 225 adversarial loss 0.79064 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 226 adversarial loss 0.79062 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 227 adversarial loss 0.79060 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 228 adversarial loss 0.79059 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 229 adversarial loss 0.79059 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 230 adversarial loss 0.79057 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 231 adversarial loss 0.79055 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 232 adversarial loss 0.79053 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 233 adversarial loss 0.79053 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 234 adversarial loss 0.79052 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 235 adversarial loss 0.79050 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 236 adversarial loss 0.79048 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 237 adversarial loss 0.79049 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 238 adversarial loss 0.79048 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 239 adversarial loss 0.79047 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 240 adversarial loss 0.79047 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 241 adversarial loss 0.79047 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 242 adversarial loss 0.79046 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 243 adversarial loss 0.79045 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 244 adversarial loss 0.79044 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 245 adversarial loss 0.79044 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 246 adversarial loss 0.79044 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 247 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 248 adversarial loss 0.79042 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 249 adversarial loss 0.79043 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 250 adversarial loss 0.79043 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 251 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 252 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 253 adversarial loss 0.79042 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 254 adversarial loss 0.79042 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 255 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 256 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 257 adversarial loss 0.79042 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 258 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 259 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 260 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 261 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 262 adversarial loss 0.79041 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 263 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 264 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 265 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 266 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 267 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 268 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 269 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 270 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 271 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 272 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 273 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 274 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 275 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 276 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 277 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 278 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 279 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 280 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 281 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 282 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 283 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 284 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 285 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 286 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 287 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 288 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 289 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 290 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 291 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 292 adversarial loss 0.79034 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 293 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 294 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 295 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 296 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 297 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 298 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 299 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 300 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 301 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 302 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 303 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 304 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 305 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 306 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 307 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 308 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 309 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 310 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 311 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 312 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 313 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 314 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 315 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 316 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 317 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 318 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 319 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 320 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 321 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 322 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 323 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 324 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 325 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 326 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 327 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 328 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 329 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 330 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 331 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 332 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 333 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 334 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 335 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 336 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 337 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 338 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 339 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 340 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 341 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 342 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 343 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 344 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 345 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 346 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 347 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 348 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 349 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 350 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 351 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 352 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 353 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 354 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 355 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 356 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 357 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 358 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 359 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 360 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 361 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 362 adversarial loss 0.79035 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 363 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 364 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 365 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 366 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 367 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 368 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 369 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 370 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 371 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 372 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 373 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 374 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 375 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 376 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 377 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 378 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 379 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 380 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 381 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 382 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 383 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 384 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 385 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 386 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 387 adversarial loss 0.79037 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 388 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 389 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 390 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 391 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 392 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 393 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 394 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 395 adversarial loss 0.79040 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 396 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 397 adversarial loss 0.79038 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 398 adversarial loss 0.79039 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 399 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 400 adversarial loss 0.79036 model loss on clean img: 5.70886 percent misclassified images 90.0
+
+Epoch 401
