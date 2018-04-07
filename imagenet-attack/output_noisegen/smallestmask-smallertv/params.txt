@@ -1,0 +1,69 @@
+Parameters
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_epsilon: 1e-08
+apply_folder: 
+attack_batch_size: 23
+attack_epochs: 30000
+attack_learning_rate: 0.1
+attack_mask: masks/mask-mug-smallest-299.png
+attack_srcdir: /data/experimental_images/mug/cropped
+attack_target: 481
+color_shifts_max: 2.0
+color_shifts_min: 0.1
+config_file: config_attack/smallestmask-smallertv.json
+first_epoch_with_reg: 0
+image_channels: 3
+image_height: 299
+image_width: 299
+just_apply_noise: False
+l2image: panda.png
+lambda_l1norm: 0.002
+lambda_l2image: 1e-06
+lambda_l2norm: 0.00025
+lambda_nps: 1e-05
+lambda_tv: 1e-05
+learning_rate_reduce_factor: 100.0
+model_path: clean_checkpoints/base_inception_model/inception_v3.ckpt
+noise_init_mean: 0.0
+noise_init_stddev: 0.5
+noise_initial: random_normal
+noise_restore_checkpoint: 
+num_classes: 1001
+pixel_high: 1.0
+pixel_low: -1.0
+printability_tuples: 30values.txt
+reglosses: tv,l2norm
+save_folder: ./output_noisegen/
+save_freq: 100
+save_prefix: smallestmask-smallertv
+tf_allow_growth: False
+transform_mean: 0.0
+transform_stddev: 30.0
+validation_set: /data/experimental_images/mug/val/cropped
+Epoch 0 total_loss 12.9994 class_loss 9.9405 tv_loss 2.9945 l2norm_loss 0.0644 val_accuracy 0.00
+Epoch 100 total_loss 6.0156 class_loss 5.3758 tv_loss 0.6140 l2norm_loss 0.0257 val_accuracy 0.00
+Epoch 200 total_loss 3.8970 class_loss 3.6285 tv_loss 0.2497 l2norm_loss 0.0188 val_accuracy 0.35
+Epoch 300 total_loss 1.1495 class_loss 0.8970 tv_loss 0.2337 l2norm_loss 0.0187 val_accuracy 0.78
+Epoch 400 total_loss 0.6343 class_loss 0.3869 tv_loss 0.2286 l2norm_loss 0.0188 val_accuracy 0.96
+Epoch 500 total_loss 0.4837 class_loss 0.2414 tv_loss 0.2235 l2norm_loss 0.0188 val_accuracy 1.00
+Epoch 600 total_loss 0.6830 class_loss 0.4466 tv_loss 0.2176 l2norm_loss 0.0188 val_accuracy 0.87
+Epoch 700 total_loss 0.4051 class_loss 0.1759 tv_loss 0.2106 l2norm_loss 0.0186 val_accuracy 1.00
+Epoch 800 total_loss 0.3718 class_loss 0.1510 tv_loss 0.2024 l2norm_loss 0.0185 val_accuracy 0.96
+Epoch 900 total_loss 0.3464 class_loss 0.1355 tv_loss 0.1928 l2norm_loss 0.0182 val_accuracy 1.00
+Epoch 1000 total_loss 0.3818 class_loss 0.1821 tv_loss 0.1819 l2norm_loss 0.0179 val_accuracy 0.96
+Epoch 1100 total_loss 0.2116 class_loss 0.0244 tv_loss 0.1697 l2norm_loss 0.0175 val_accuracy 1.00
+Epoch 1200 total_loss 0.2803 class_loss 0.1068 tv_loss 0.1565 l2norm_loss 0.0170 val_accuracy 0.96
+Epoch 1300 total_loss 0.4300 class_loss 0.2709 tv_loss 0.1427 l2norm_loss 0.0165 val_accuracy 1.00
+Epoch 1400 total_loss 0.3181 class_loss 0.1728 tv_loss 0.1293 l2norm_loss 0.0159 val_accuracy 1.00
+Epoch 1500 total_loss 0.2853 class_loss 0.1532 tv_loss 0.1167 l2norm_loss 0.0154 val_accuracy 1.00
+Epoch 1600 total_loss 0.1718 class_loss 0.0517 tv_loss 0.1051 l2norm_loss 0.0149 val_accuracy 0.96
+Epoch 1700 total_loss 0.2898 class_loss 0.1809 tv_loss 0.0944 l2norm_loss 0.0144 val_accuracy 0.96
+Epoch 1800 total_loss 0.2300 class_loss 0.1303 tv_loss 0.0856 l2norm_loss 0.0140 val_accuracy 1.00
+Epoch 1900 total_loss 0.1914 class_loss 0.0993 tv_loss 0.0785 l2norm_loss 0.0137 val_accuracy 0.96
+Epoch 2000 total_loss 0.2574 class_loss 0.1721 tv_loss 0.0720 l2norm_loss 0.0133 val_accuracy 1.00
+Epoch 2100 total_loss 0.1550 class_loss 0.0747 tv_loss 0.0672 l2norm_loss 0.0130 val_accuracy 1.00
+Epoch 2200 total_loss 0.2686 class_loss 0.1939 tv_loss 0.0620 l2norm_loss 0.0127 val_accuracy 0.96
+Epoch 2300 total_loss 0.2050 class_loss 0.1338 tv_loss 0.0588 l2norm_loss 0.0125 val_accuracy 1.00
+Epoch 2400 total_loss 0.1872 class_loss 0.1195 tv_loss 0.0554 l2norm_loss 0.0123 val_accuracy 0.96
+Epoch 2500 total_loss 0.0848 class_loss 0.0206 tv_loss 0.0522 l2norm_loss 0.0120 val_accuracy 0.96

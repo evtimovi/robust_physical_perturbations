@@ -98,11 +98,6 @@ ENV/
 # mypy
 .mypy_cache/
 
-# data
-clean_checkpoints
-victim-set
-output_noisegen
-
 #Visual Studio Code editor files
 .vscode/*
 
