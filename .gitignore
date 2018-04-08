@@ -107,3 +107,4 @@ ENV/
 ._*
 
 gtsrb-cnn-attack/models/*
+inception_v3.ckpt
