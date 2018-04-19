@@ -8,3 +8,5 @@ The folders are as follows:
 * `imagenet-attack` holds the code that attacks the Inception V3 model that operates on ImageNet data. Most advanced implementation of the algorithm.
 
 Further details are given in `README` files in the respective folders. They also specify how to download portions that are needed for the code to run but are not committed here due to size.
+
+Note that in `lisa-cnn-attack` and in `gtsrb-cnn-attack` we include portions of an older version of the [cleverhans](https://github.com/tensorflow/cleverhans) library for compatibility. It carries its own [MIT License](https://github.com/tensorflow/cleverhans/blob/master/LICENSE).
