@@ -9,7 +9,7 @@ To run the code:
 * The name of the `.json` file you create in this folder must match the checkpoint file you want to save your attack variables and noise images as. (That's why there are two identical files with different names; if you run `run_attack.py` without any modifications, it won't override the existing attack data we have shared in the repo.)
 * For a description of what each parameter is, run `python attack.py -h` or look into `flags.py`.
 
-3. Download the victim and validation images we used from [link forthcoming](https://example.com) or create your own sets. Set your `attack_srcdir` and `validation_set` parameters in your config to point to these sets.
+3. Download the victim and validation images we used from [here](https://drive.google.com/drive/u/1/folders/1DbsJtE6KT3J15TzcCoVrvoHeCVHhSxtc) or create your own sets. Set your `attack_srcdir` and `validation_set` parameters in your config to point to these sets.
 * The only requirement is that the number of victim images is a multiple of your validation set and that you set the `attack_batch_size` parameter in your `.json` file accordingly.
 * Of course, the images should be `.jpg` or `.png` but resizing is handled in the code.
 

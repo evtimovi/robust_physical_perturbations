@@ -1,5 +1,5 @@
 
-This repository holds the code (and some results) used in [Robust Physical-World Attacks on Deep Learning Visual Classification](https://arxiv.org/abs/1707.08945).
+This repository holds the code (and some results) used in [Robust Physical-World Attacks on Deep Learning Visual Classification](https://arxiv.org/abs/1707.08945). The software carries an [MIT license](https://github.com/evtimovi/robust_physical_perturbations/blob/master/LICENSE).
 
 The folders are as follows:
 
