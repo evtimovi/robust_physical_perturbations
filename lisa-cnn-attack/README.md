@@ -1,5 +1,27 @@
 This directory contains the code for attacking the LISA-CNN model and the model itself. It is self-contained and there should be nothing for you to download in order to run the attack. It also contains the outputs of the runs that generated two of the attacks in the paper (in `optimization_output`).
 
+## Important: Tensorflow and Keras Versions
+This code runs with tensorflow version 1.4.1 and keras version 1.2.0. We recommend following these steps to ensure that you're not running into version mismatch problems:
+
+1. Make sure you have [pipenv](https://docs.pipenv.org/) installed.
+2. From the top-level folder of the repo, execute the following commands:
+```
+cd lisa-cnn-attack
+rm Pipfile
+pipenv install tensorflow==1.4.1 
+```
+(change this to `pipenv install tensorflow-gpu==1.4.1`, if you have a GPU on your system)
+
+```
+pipenv install keras==1.2.0
+pipenv install scipy
+pipenv install opencv-python
+pipenv install pillow
+pipenv shell
+```
+
+3. The last command opens up a pipenv shell for you and in it, `run_attack_many.sh` should run fine. 
+
 ## Driver Scripts
 
 To run, use the script `run_attack_many.sh` inside a [pipenv](https://docs.pipenv.org/) shell. It is set up in the repo so that it replicates the subliminal poster attack. To see a description of what all the parameters mean, run `python gennoise_many_images.py -h` or look at the definitions of the various command line flags that specify the optimization parameters. 
