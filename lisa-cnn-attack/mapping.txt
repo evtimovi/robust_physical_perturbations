@@ -1,0 +1,17 @@
+addedLane
+keepRight
+laneEnds
+merge
+pedestrianCrossing
+school
+schoolSpeedLimit25
+signalAhead
+speedLimit25
+speedLimit30
+speedLimit35
+speedLimit45
+speedLimitUrdbl
+stop
+stopAhead
+turnRight
+yield
