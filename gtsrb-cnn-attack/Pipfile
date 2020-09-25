@@ -11,6 +11,6 @@ name = "pypi"
 
 [packages]
 
-tensorflow = "==1.4.1"
+tensorflow = "==1.15.4"
 keras = "==1.2.2"
 opencv-python = "*"
